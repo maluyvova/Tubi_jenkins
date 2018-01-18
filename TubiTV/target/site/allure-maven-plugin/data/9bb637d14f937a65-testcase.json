@@ -1,0 +1,59 @@
+{
+  "uid" : "9bb637d14f937a65",
+  "name" : "TestCase01_09",
+  "title" : "Test case 01 09",
+  "time" : {
+    "start" : 1516249492941,
+    "stop" : 1516249507810,
+    "duration" : 14869
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "32ca82a78e1e06d3",
+    "name" : "Surefire suite : Surefire test",
+    "title" : "Surefire suite : Surefire test"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "suite-name",
+    "value" : "Surefire suite : Surefire test"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "testMethod",
+    "value" : "TestCase01_09"
+  }, {
+    "name" : "testSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "host",
+    "value" : "MacBook-Pro-3.local"
+  }, {
+    "name" : "testGroup",
+    "value" : "Surefire test"
+  }, {
+    "name" : "thread",
+    "value" : "35635@MacBook-Pro-3.local.main(1)"
+  }, {
+    "name" : "suite-title",
+    "value" : "Surefire suite : Surefire test"
+  }, {
+    "name" : "testClass",
+    "value" : "core.TubiTVTest"
+  } ],
+  "parameters" : [ ]
+}

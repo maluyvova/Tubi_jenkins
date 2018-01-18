@@ -1,0 +1,89 @@
+{
+  "hash" : "e7105c43ada45c9f6e0006854ef1a1d95249231d",
+  "plugins" : {
+    "total" : {
+      "statistic" : {
+        "total" : 60,
+        "passed" : 53,
+        "pending" : 0,
+        "canceled" : 0,
+        "failed" : 4,
+        "broken" : 3
+      },
+      "time" : {
+        "start" : 1516249358147,
+        "stop" : 1516250440363,
+        "duration" : 1082216
+      }
+    },
+    "defects" : {
+      "totalCount" : 7,
+      "items" : [ {
+        "count" : 1,
+        "uid" : "67e07c6eaf27e1",
+        "message" : "AssertionError: \nExpected: \"You must be 13 years or older\"\n     but: was \"Email has already been used. Please Login or Reset your password\"",
+        "status" : "FAILED"
+      }, {
+        "count" : 1,
+        "uid" : "80aaf0e54b66e12",
+        "message" : "AssertionError: \nExpected: \"https://tubitv.com/home\"\n     but: was \"https://tubitv.com/login?redirect=/signup\"",
+        "status" : "FAILED"
+      }, {
+        "count" : 1,
+        "uid" : "90efdd98c24f549b",
+        "message" : "AssertionError: \nExpected: \"https://tubitv.com/activate\"\n     but: was \"https://tubitv.com/signup?redirect=/activate\"",
+        "status" : "FAILED"
+      }, {
+        "count" : 1,
+        "uid" : "9775ba47bd53e5da",
+        "message" : "AssertionError: \nExpected: \"Test 7\"\n     but: was \"Born to Fly\"",
+        "status" : "FAILED"
+      }, {
+        "count" : 1,
+        "uid" : "64dc2226327ddf14",
+        "message" : "IndexOutOfBoundsException: Index: 1, Size: 1",
+        "status" : "BROKEN"
+      }, {
+        "count" : 1,
+        "uid" : "dffc7e5669c19c12",
+        "message" : "TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //h1[@class='_2I1Kknp0lk'] (tried for 15 second(s) with 500 MILLISECONDS interval)",
+        "status" : "BROKEN"
+      }, {
+        "count" : 1,
+        "uid" : "d252caf7c1b14c46",
+        "message" : "ElementNotInteractableException: \nBuild info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'\nSystem info: host: 'MacBook-Pro-3.local', ip: 'fe80:0:0:0:401:608a:2476:a1d6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.1', java.version: '1.8.0_121'\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCapabilities [{moz:profile=/var/folders/59/rv1j4l2s6lxfp0vlypzcr5c80000gp/T/rust_mozprofile.sTeCvj7SkLaR, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=MAC, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0.4, platformVersion=17.2.0, moz:processID=36239, browserName=firefox, javascriptEnabled=true, platformName=MAC, moz:webdriverClick=false}]\nSession ID: 5e3f4c3e-8710-e047-88b3-05a16778fce9",
+        "status" : "BROKEN"
+      } ]
+    },
+    "xunit" : {
+      "totalCount" : 1,
+      "items" : [ {
+        "uid" : "32ca82a78e1e06d3",
+        "title" : "Surefire suite : Surefire test",
+        "statistic" : {
+          "total" : 60,
+          "passed" : 53,
+          "pending" : 0,
+          "canceled" : 0,
+          "failed" : 4,
+          "broken" : 3
+        }
+      } ]
+    },
+    "behaviors" : {
+      "totalCount" : 1,
+      "items" : [ {
+        "title" : "Without feature",
+        "statistic" : {
+          "total" : 60,
+          "passed" : 53,
+          "pending" : 0,
+          "canceled" : 0,
+          "failed" : 4,
+          "broken" : 3
+        }
+      } ]
+    },
+    "environment" : [ ]
+  }
+}

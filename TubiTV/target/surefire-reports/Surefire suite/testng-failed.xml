@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="0" name="Failed suite [Surefire suite]">
+  <test name="Surefire test(failed)">
+    <classes>
+      <class name="core.TubiTVTest">
+        <methods>
+          <include name="TestCase01_20"/>
+          <include name="TestCase05_03"/>
+          <include name="TestCase03_03"/>
+          <include name="TestCase05_02_2"/>
+          <include name="TestCase01_02_1"/>
+          <include name="TestCase05_08"/>
+          <include name="TestCase02_05"/>
+        </methods>
+      </class> <!-- core.TubiTVTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

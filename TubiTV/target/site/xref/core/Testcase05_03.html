@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head><meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>Testcase05_03 xref</title>
+<link type="text/css" rel="stylesheet" href="../stylesheet.css" />
+</head>
+<body>
+<div id="overview"><a href="../../apidocs/core/Testcase05_03.html">View Javadoc</a></div><pre>
+<a class="jxr_linenumber" name="L1" href="#L1">1</a>   <strong class="jxr_keyword">package</strong> core;
+<a class="jxr_linenumber" name="L2" href="#L2">2</a>   
+<a class="jxr_linenumber" name="L3" href="#L3">3</a>   <strong class="jxr_keyword">import</strong> java.io.IOException;
+<a class="jxr_linenumber" name="L4" href="#L4">4</a>   
+<a class="jxr_linenumber" name="L5" href="#L5">5</a>   <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">class</strong> <a href="../core/Testcase05_03.html">Testcase05_03</a> <strong class="jxr_keyword">extends</strong> <a href="../core/Main.html">Main</a> <strong class="jxr_keyword">implements</strong>  URL, Xpath,data,Data_<strong class="jxr_keyword">for</strong>_user {
+<a class="jxr_linenumber" name="L6" href="#L6">6</a>   	
+<a class="jxr_linenumber" name="L7" href="#L7">7</a>   	
+<a class="jxr_linenumber" name="L8" href="#L8">8</a>   	  
+<a class="jxr_linenumber" name="L9" href="#L9">9</a>   	  
+<a class="jxr_linenumber" name="L10" href="#L10">10</a>  	  <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> String TestCase05_03() <strong class="jxr_keyword">throws</strong> InterruptedException, IOException {
+<a class="jxr_linenumber" name="L11" href="#L11">11</a>  			 driver=br();
+<a class="jxr_linenumber" name="L12" href="#L12">12</a>  		    driver.get(URL.url);
+<a class="jxr_linenumber" name="L13" href="#L13">13</a>  		    testc(Xpath.search_field);
+<a class="jxr_linenumber" name="L14" href="#L14">14</a>  		    tests(Xpath.search_field,<span class="jxr_string">"Test 3"</span>);										 
+<a class="jxr_linenumber" name="L15" href="#L15">15</a>  		    testc(Xpath.test3);
+<a class="jxr_linenumber" name="L16" href="#L16">16</a>  		    testc(Xpath.search_field);
+<a class="jxr_linenumber" name="L17" href="#L17">17</a>  		    tests(Xpath.search_field,<span class="jxr_string">"Test 7"</span>);
+<a class="jxr_linenumber" name="L18" href="#L18">18</a>  		    testc(Xpath.tets7);
+<a class="jxr_linenumber" name="L19" href="#L19">19</a>  		    String result=testg(<span class="jxr_string">"/html/body/div/div/div[2]/div/div[1]/div[1]/div[3]/div/div/div/div[2]/div[1]/h1"</span>);
+<a class="jxr_linenumber" name="L20" href="#L20">20</a>  		    screenshoot(<span class="jxr_string">"/Users/maluy/eclipse-workspace/TubiTV/Screenshots/TestCase05_03.png"</span>);
+<a class="jxr_linenumber" name="L21" href="#L21">21</a>  		    driver.close();
+<a class="jxr_linenumber" name="L22" href="#L22">22</a>             <strong class="jxr_keyword">return</strong> result;}
+<a class="jxr_linenumber" name="L23" href="#L23">23</a>  	  
+<a class="jxr_linenumber" name="L24" href="#L24">24</a>  
+<a class="jxr_linenumber" name="L25" href="#L25">25</a>  }
+</pre>
+<hr/>
+<div id="footer">Copyright &#169; 2018. All rights reserved.</div>
+</body>
+</html>

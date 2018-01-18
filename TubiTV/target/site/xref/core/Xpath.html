@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head><meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>Xpath xref</title>
+<link type="text/css" rel="stylesheet" href="../stylesheet.css" />
+</head>
+<body>
+<div id="overview"><a href="../../apidocs/core/Xpath.html">View Javadoc</a></div><pre>
+<a class="jxr_linenumber" name="L1" href="#L1">1</a>   <strong class="jxr_keyword">package</strong> core;
+<a class="jxr_linenumber" name="L2" href="#L2">2</a>   
+<a class="jxr_linenumber" name="L3" href="#L3">3</a>   <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">interface</strong> <a href="../core/Xpath.html">Xpath</a>  {
+<a class="jxr_linenumber" name="L4" href="#L4">4</a>                                   <em class="jxr_comment">//REGISTER</em>
+<a class="jxr_linenumber" name="L5" href="#L5">5</a>   	String register =<span class="jxr_string">"//button[contains(@class,'NewBrandButton NewBrandButton--secondary NewBrandButton--block')]"</span>;   //register in the right corner
+<a class="jxr_linenumber" name="L6" href="#L6">6</a>   	String first_name=<span class="jxr_string">"//input [@autocomplete='given-name']"</span>; //first_name field
+<a class="jxr_linenumber" name="L7" href="#L7">7</a>   	String last_name=<span class="jxr_string">"//input [@autocomplete='family-name']"</span>;  //last_name field
+<a class="jxr_linenumber" name="L8" href="#L8">8</a>   	String <a href="../core/email.html">email</a> =<span class="jxr_string">"//input [@autocomplete='email']"</span>;   //email field
+<a class="jxr_linenumber" name="L9" href="#L9">9</a>   	String password =<span class="jxr_string">"/html/body/div/div/div[2]/div/div[1]/div/div/div/div/form/div[4]/input"</span>;  <em class="jxr_comment">//password field</em>
+<a class="jxr_linenumber" name="L10" href="#L10">10</a>  	String repassword =<span class="jxr_string">"/html/body/div/div/div[2]/div/div[1]/div/div/div/div/form/div[5]/input"</span>;  <em class="jxr_comment">//confirm_password field</em>
+<a class="jxr_linenumber" name="L11" href="#L11">11</a>  	String month=<span class="jxr_string">"/html/body/div/div/div[2]/div/div[1]/div/div/div/div/form/div[6]/div[1]/div[1]/input"</span>;  <em class="jxr_comment">//month field</em>
+<a class="jxr_linenumber" name="L12" href="#L12">12</a>  	String day=<span class="jxr_string">"/html/body/div/div/div[2]/div/div[1]/div/div/div/div/form/div[6]/div[1]/div[2]/input"</span>;    <em class="jxr_comment">//day field</em>
+<a class="jxr_linenumber" name="L13" href="#L13">13</a>  	String year=<span class="jxr_string">"//input[@maxlength='4']"</span>;   //year field
+<a class="jxr_linenumber" name="L14" href="#L14">14</a>  	String orange_register=<span class="jxr_string">"//button[contains(@class,'NewBrandButton--large _3z')]"</span>;  //orange register button
+<a class="jxr_linenumber" name="L15" href="#L15">15</a>  	String facebook=<span class="jxr_string">"//button[contains(@class,'NewBrandButton NewBrandButton--large NewBrandButton--block _1IIxN')]"</span>; //register via facebook
+<a class="jxr_linenumber" name="L16" href="#L16">16</a>  	String register_down= <span class="jxr_string">"//a[contains(@href,'/signup')]"</span>; //register below orange <span class="jxr_string">"Sign in"</span>
+<a class="jxr_linenumber" name="L17" href="#L17">17</a>  	String register_up=<span class="jxr_string">"//a[contains(@href,'/signup?redirect=/login')]"</span>; //register on right corner in sign page 
+<a class="jxr_linenumber" name="L18" href="#L18">18</a>  	String emessage=<span class="jxr_string">"//p[@class='_1mkulvZZqh']"</span>; //error message about year restriction
+<a class="jxr_linenumber" name="L19" href="#L19">19</a>  	
+<a class="jxr_linenumber" name="L20" href="#L20">20</a>  	                                     <em class="jxr_comment">//SIGN IN</em>
+<a class="jxr_linenumber" name="L21" href="#L21">21</a>  	String sign_in=<span class="jxr_string">"//a[contains(@class,'bFNdfWAZ4w')]"</span>; // sign in 
+<a class="jxr_linenumber" name="L22" href="#L22">22</a>  	String semail=<span class="jxr_string">"//input[contains(@autocomplete,'email')]"</span>; //email field in sign in page 
+<a class="jxr_linenumber" name="L23" href="#L23">23</a>      String spassword=<span class="jxr_string">"//input[contains(@type,'password')]"</span>; //password field in sign page 
+<a class="jxr_linenumber" name="L24" href="#L24">24</a>      String orange_signIn=<span class="jxr_string">"//button[contains(@type,'submit')]"</span>; // orange Sign In button
+<a class="jxr_linenumber" name="L25" href="#L25">25</a>      String error_message2_02 =<span class="jxr_string">"/html/body/div/div/div[2]/div/div[1]/div/div/div/form/p"</span>; <em class="jxr_comment">// Error message for test case 2.02,2.03,2.04</em>
+<a class="jxr_linenumber" name="L26" href="#L26">26</a>      String signin_down = <span class="jxr_string">"//a[contains(@class,'bFNdfWAZ4w')]"</span>; //sign in in right corner,  in Register page
+<a class="jxr_linenumber" name="L27" href="#L27">27</a>      String signin_up=<span class="jxr_string">"/html/body/div/div/div[2]/header/div/div[2]/div/ul/li/a"</span>; <em class="jxr_comment">//sign in in </em>
+<a class="jxr_linenumber" name="L28" href="#L28">28</a>      String sfacebook=<span class="jxr_string">"//button[@class='NewBrandButton NewBrandButton--large NewBrandButton--block _1IIxN98aWu']"</span>; //sign via Facebook
+<a class="jxr_linenumber" name="L29" href="#L29">29</a>  
+<a class="jxr_linenumber" name="L30" href="#L30">30</a>                                                 <em class="jxr_comment">//ACTIVATE</em>
+<a class="jxr_linenumber" name="L31" href="#L31">31</a>      String afacebook=<span class="jxr_string">"//button[@class='NewBrandButton NewBrandButton--large NewBrandButton--block _1IIxN98aWu']"</span>; // Register via Facebook in activate page 
+<a class="jxr_linenumber" name="L32" href="#L32">32</a>      String aregister=<span class="jxr_string">"//button[contains(@class,'NewBrandButton NewBrandButton--large NewBrandButton--block NewBrandButton--inverse _3jDvDZPml5')]"</span>; //Register via <a href="../core/email.html">email</a> in activate page
+<a class="jxr_linenumber" name="L33" href="#L33">33</a>      String asign_in=<span class="jxr_string">"//a[@href='/login']"</span>; //Sign In in activate page 
+<a class="jxr_linenumber" name="L34" href="#L34">34</a>      String tubitv = <span class="jxr_string">"//a[@class='_3y1nFa6DUX']"</span>; // tubiTV black icon on the right corner
+<a class="jxr_linenumber" name="L35" href="#L35">35</a>      String greting = <span class="jxr_string">"/html/body/div/div/div[2]/header/div/div[2]/div/div/div[1]"</span>; <em class="jxr_comment">// greeting button on the right corner </em>
+<a class="jxr_linenumber" name="L36" href="#L36">36</a>      String register_=<span class="jxr_string">"//a[contains(@class,'bFNdfWAZ4w')]"</span>; //register button from the sign_in page 
+<a class="jxr_linenumber" name="L37" href="#L37">37</a>      String signin_=<span class="jxr_string">"//a[@href='/login']"</span>; //signIn button from the register page
+<a class="jxr_linenumber" name="L38" href="#L38">38</a>      
+<a class="jxr_linenumber" name="L39" href="#L39">39</a>      
+<a class="jxr_linenumber" name="L40" href="#L40">40</a>      
+<a class="jxr_linenumber" name="L41" href="#L41">41</a>      
+<a class="jxr_linenumber" name="L42" href="#L42">42</a>                                                <em class="jxr_comment">//Forgot</em>
+<a class="jxr_linenumber" name="L43" href="#L43">43</a>      String forgot_password=<span class="jxr_string">"//a[@href='/forgot']"</span>;     //  Forgot password in register page 
+<a class="jxr_linenumber" name="L44" href="#L44">44</a>      String email_field=<span class="jxr_string">"//input[@class='Input__input']"</span>;  //email field in forgot password page
+<a class="jxr_linenumber" name="L45" href="#L45">45</a>      String submit=<span class="jxr_string">"//button[@class='NewBrandButton NewBrandButton--large']"</span>;   // submit button in forgot password
+<a class="jxr_linenumber" name="L46" href="#L46">46</a>            
+<a class="jxr_linenumber" name="L47" href="#L47">47</a>      
+<a class="jxr_linenumber" name="L48" href="#L48">48</a>                                              <em class="jxr_comment">//Search</em>
+<a class="jxr_linenumber" name="L49" href="#L49">49</a>      String search_field=<span class="jxr_string">"//section[@class='yOpR1UpemN _3xdFJDff8t']"</span>; //search field 
+<a class="jxr_linenumber" name="L50" href="#L50">50</a>      String tets7=<span class="jxr_string">"//div[@class='_3ytAJuD6ba']"</span>;  //test 7 title
+<a class="jxr_linenumber" name="L51" href="#L51">51</a>      String test3=<span class="jxr_string">"//div[@class='_3ytAJuD6ba']"</span>;   //test 3 title
+<a class="jxr_linenumber" name="L52" href="#L52">52</a>      String message=<span class="jxr_string">"//div[@class='_1OxbQr9uDv']"</span>; //message that you need  register to watch <strong class="jxr_keyword">this</strong> movie
+<a class="jxr_linenumber" name="L53" href="#L53">53</a>      String ssignin=<span class="jxr_string">"//button[@class='NewBrandButton']"</span>;  //sign button <strong class="jxr_keyword">for</strong> whatch <strong class="jxr_keyword">this</strong> movie
+<a class="jxr_linenumber" name="L54" href="#L54">54</a>      String test3t=<span class="jxr_string">"//h1[@class='_2I1Kknp0lk']"</span>; //test3 title after sign in
+<a class="jxr_linenumber" name="L55" href="#L55">55</a>      
+<a class="jxr_linenumber" name="L56" href="#L56">56</a>      
+<a class="jxr_linenumber" name="L57" href="#L57">57</a>                                          <em class="jxr_comment">//Settings</em>
+<a class="jxr_linenumber" name="L58" href="#L58">58</a>      String setings=<span class="jxr_string">"/html/body/div/div/div[2]/header/div/div[2]/div/div/div[2]/a[1]"</span>; <em class="jxr_comment">//setings in the left upper corner</em>
+<a class="jxr_linenumber" name="L59" href="#L59">59</a>      String first_nama=<span class="jxr_string">"//input[@name='firstName']"</span>;    //first name field in setings page
+<a class="jxr_linenumber" name="L60" href="#L60">60</a>      String save=<span class="jxr_string">"//button[@class='NewBrandButton NewBrandButton--large']"</span>;  //save button
+<a class="jxr_linenumber" name="L61" href="#L61">61</a>      String smount= <span class="jxr_string">"//input[@name='birthMonth']"</span>;  //month button in setting page
+<a class="jxr_linenumber" name="L62" href="#L62">62</a>      String sday=<span class="jxr_string">"//input[@name='birthDay']"</span>;
+<a class="jxr_linenumber" name="L63" href="#L63">63</a>      String syear=<span class="jxr_string">"//input[@name='birthYear']"</span>;
+<a class="jxr_linenumber" name="L64" href="#L64">64</a>      String sspassword=<span class="jxr_string">"//*[@id=\&quot;app\&quot;]/div[2]/div/div[2]/div/div/div/div/div[3]/div[2]/div/div/form/div[1]/input"</span>;
+<a class="jxr_linenumber" name="L65" href="#L65">65</a>      String npassword=<span class="jxr_string">"//*[@id=\&quot;app\&quot;]/div[2]/div/div[2]/div/div/div/div/div[3]/div[2]/div/div/form/div[2]/input"</span>;
+<a class="jxr_linenumber" name="L66" href="#L66">66</a>      String rnpassword=<span class="jxr_string">"//*[@id=\&quot;app\&quot;]/div[2]/div/div[2]/div/div/div/div/div[3]/div[2]/div/div/form/div[3]/input"</span>;
+<a class="jxr_linenumber" name="L67" href="#L67">67</a>      String changepassword =<span class="jxr_string">"//button[@type='submit']"</span> ;
+<a class="jxr_linenumber" name="L68" href="#L68">68</a>      	String success=<span class="jxr_string">"//div[@class='_14o6wr4pKM']"</span>;
+<a class="jxr_linenumber" name="L69" href="#L69">69</a>      	String errormesage=<span class="jxr_string">"//div[@class='_1EDmgAGcC9']"</span>;
+<a class="jxr_linenumber" name="L70" href="#L70">70</a>      	String errmesage=<span class="jxr_string">"//div[@class='_10sW9rGLei']"</span>; //error message <strong class="jxr_keyword">if</strong> you younger then 13 years old <strong class="jxr_keyword">for</strong> TC 06.01
+<a class="jxr_linenumber" name="L71" href="#L71">71</a>      	<em class="jxr_comment">//delete account</em>
+<a class="jxr_linenumber" name="L72" href="#L72">72</a>      	String removemyacount=<span class="jxr_string">"//h2[@class='Ut9tQq5_t-']"</span>;  //remove my account button
+<a class="jxr_linenumber" name="L73" href="#L73">73</a>      	String delete =<span class="jxr_string">"//button[@class='NewBrandButton NewBrandButton--large NewBrandButton--inverse']"</span>;  //delete permanently button
+<a class="jxr_linenumber" name="L74" href="#L74">74</a>      String many=<span class="jxr_string">"/html/body/div[1]/div/div[2]/div/div[2]/div/div/div/div/div[4]/div[1]/div/div[1]/div[2]/div[1]/label"</span>; <em class="jxr_comment">// checkbox with "There's too many ads"</em>
+<a class="jxr_linenumber" name="L75" href="#L75">75</a>      String dlike=<span class="jxr_string">"/html/body/div[1]/div/div[2]/div/div[2]/div/div/div/div/div[4]/div[1]/div/div[1]/div[2]/div[2]/label"</span>;  <em class="jxr_comment">//checkbox with "I don't lie the content</em>
+<a class="jxr_linenumber" name="L76" href="#L76">76</a>      String ive=<span class="jxr_string">"/html/body/div[1]/div/div[2]/div/div[2]/div/div/div/div/div[4]/div[1]/div/div[1]/div[2]/div[3]/label"</span>; <em class="jxr_comment">//checkbox with "I've experienced Technical Issues</em>
+<a class="jxr_linenumber" name="L77" href="#L77">77</a>      String other=<span class="jxr_string">"/html/body/div[1]/div/div[2]/div/div[2]/div/div/div/div/div[4]/div[1]/div/div[1]/div[2]/div[4]/label"</span>; <em class="jxr_comment">//checkbox with "Other"</em>
+<a class="jxr_linenumber" name="L78" href="#L78">78</a>      String submiti=<span class="jxr_string">"//button[@class='NewBrandButton']"</span>; //submit button when checkboxes are selected
+<a class="jxr_linenumber" name="L79" href="#L79">79</a>      String pfield=<span class="jxr_string">"//div[@class='_399LkPVZQA _3zq6e_tAmh _1aZ3xRJKzH']"</span>; //password field in last step
+<a class="jxr_linenumber" name="L80" href="#L80">80</a>      String laststep=<span class="jxr_string">"//button[@class='NewBrandButton']"</span>; //button in the last step
+<a class="jxr_linenumber" name="L81" href="#L81">81</a>      String textarea=<span class="jxr_string">"//textarea[@class='_2A86-Dym-h']"</span>; //text field  after you select <span class="jxr_string">"Other"</span>
+<a class="jxr_linenumber" name="L82" href="#L82">82</a>      <em class="jxr_comment">//Parental controls</em>
+<a class="jxr_linenumber" name="L83" href="#L83">83</a>      String parental=<span class="jxr_string">"//div[@data-index='1']"</span>; //parental controls TC 06.08
+<a class="jxr_linenumber" name="L84" href="#L84">84</a>      String level =<span class="jxr_string">"//span[@class='Input__input']"</span>; //level of parental controls 
+<a class="jxr_linenumber" name="L85" href="#L85">85</a>      String ps=<span class="jxr_string">"//input[@name='password']"</span>; // password field
+<a class="jxr_linenumber" name="L86" href="#L86">86</a>      <em class="jxr_comment">//notifications</em>
+<a class="jxr_linenumber" name="L87" href="#L87">87</a>      String notifications =<span class="jxr_string">"//div[@data-index='2']"</span>; //notifications menu TC 06.10
+<a class="jxr_linenumber" name="L88" href="#L88">88</a>      String tubit=<span class="jxr_string">"//a[@href='/home']"</span>;  // tubitv logo in the left corner
+<a class="jxr_linenumber" name="L89" href="#L89">89</a>      String checkbox=<span class="jxr_string">"//input[@value='Weekly newsletter']"</span>; //check box <strong class="jxr_keyword">for</strong> TC 06.10
+<a class="jxr_linenumber" name="L90" href="#L90">90</a>      String ssave=<span class="jxr_string">"//button[@class='NewBrandButton NewBrandButton--large']"</span>;  //save button <strong class="jxr_keyword">for</strong> notifications
+<a class="jxr_linenumber" name="L91" href="#L91">91</a>                                             <em class="jxr_comment">//Facebook</em>
+<a class="jxr_linenumber" name="L92" href="#L92">92</a>      String continueas=<span class="jxr_string">"//button[@class='_42ft _4jy0 layerConfirm _1fm0 _51_n autofocus _4jy3 _4jy1 selected _51sy']"</span>; //<strong class="jxr_keyword">continue</strong> button when you register with e <strong class="jxr_keyword">new</strong> facebook acount
+<a class="jxr_linenumber" name="L93" href="#L93">93</a>      String newpassword=<span class="jxr_string">"//input[@type='password']"</span>; //password field <strong class="jxr_keyword">for</strong> <strong class="jxr_keyword">new</strong> facebook user 
+<a class="jxr_linenumber" name="L94" href="#L94">94</a>      String newpassword1=<span class="jxr_string">"/html/body/div/div/div[2]/div/div[1]/div/div/div/form/div[3]/input"</span>;
+<a class="jxr_linenumber" name="L95" href="#L95">95</a>      String newregister=<span class="jxr_string">"//button[@type='submit']"</span>;  // register button when you change a password <strong class="jxr_keyword">for</strong> tubi account with a <strong class="jxr_keyword">new</strong> facebook
+<a class="jxr_linenumber" name="L96" href="#L96">96</a>      String tubilogo=<span class="jxr_string">"/html/body/div/div/div[2]/header/div/div[1]/div/a/svg/path"</span>;   <em class="jxr_comment">//tubi logo in left upper corner for </em>
+<a class="jxr_linenumber" name="L97" href="#L97">97</a>      
+<a class="jxr_linenumber" name="L98" href="#L98">98</a>      
+<a class="jxr_linenumber" name="L99" href="#L99">99</a>  }
+</pre>
+<hr/>
+<div id="footer">Copyright &#169; 2018. All rights reserved.</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head><meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>Testcase05_05 xref</title>
+<link type="text/css" rel="stylesheet" href="../stylesheet.css" />
+</head>
+<body>
+<div id="overview"><a href="../../apidocs/core/Testcase05_05.html">View Javadoc</a></div><pre>
+<a class="jxr_linenumber" name="L1" href="#L1">1</a>   <strong class="jxr_keyword">package</strong> core;
+<a class="jxr_linenumber" name="L2" href="#L2">2</a>   
+<a class="jxr_linenumber" name="L3" href="#L3">3</a>   <strong class="jxr_keyword">import</strong> java.io.IOException;
+<a class="jxr_linenumber" name="L4" href="#L4">4</a>   
+<a class="jxr_linenumber" name="L5" href="#L5">5</a>   <strong class="jxr_keyword">import</strong> org.openqa.selenium.By;
+<a class="jxr_linenumber" name="L6" href="#L6">6</a>   <strong class="jxr_keyword">import</strong> org.openqa.selenium.Keys;
+<a class="jxr_linenumber" name="L7" href="#L7">7</a>   <strong class="jxr_keyword">import</strong> org.openqa.selenium.interactions.Actions;
+<a class="jxr_linenumber" name="L8" href="#L8">8</a>   
+<a class="jxr_linenumber" name="L9" href="#L9">9</a>   <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">class</strong> <a href="../core/Testcase05_05.html">Testcase05_05</a> <strong class="jxr_keyword">extends</strong> <a href="../core/Main.html">Main</a> <strong class="jxr_keyword">implements</strong>  URL, Xpath,data,Data_<strong class="jxr_keyword">for</strong>_user{
+<a class="jxr_linenumber" name="L10" href="#L10">10</a>  	
+<a class="jxr_linenumber" name="L11" href="#L11">11</a>  	
+<a class="jxr_linenumber" name="L12" href="#L12">12</a>  	
+<a class="jxr_linenumber" name="L13" href="#L13">13</a>  	  <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> String TestCase05_05() <strong class="jxr_keyword">throws</strong> InterruptedException, IOException {
+<a class="jxr_linenumber" name="L14" href="#L14">14</a>  			String <a href="../core/data.html">data</a> = <span class="jxr_string">"Test3"</span>;
+<a class="jxr_linenumber" name="L15" href="#L15">15</a>  			  driver=br();
+<a class="jxr_linenumber" name="L16" href="#L16">16</a>  			  Actions a = <strong class="jxr_keyword">new</strong> Actions(driver);  <em class="jxr_comment">//action </em>
+<a class="jxr_linenumber" name="L17" href="#L17">17</a>  			    driver.get(URL.url);
+<a class="jxr_linenumber" name="L18" href="#L18">18</a>  			    testc(Xpath.search_field);  <em class="jxr_comment">//click on search field</em>
+<a class="jxr_linenumber" name="L19" href="#L19">19</a>  			    tests(Xpath.search_field,data);   <em class="jxr_comment">//send data to search field with test3 </em>
+<a class="jxr_linenumber" name="L20" href="#L20">20</a>  			    <strong class="jxr_keyword">for</strong>(<strong class="jxr_keyword">int</strong> i=0;i&lt;data.length();i++) {
+<a class="jxr_linenumber" name="L21" href="#L21">21</a>  			    a.moveToElement(driver.findElement(By.xpath(Xpath.search_field))).click().sendKeys(Keys.BACK_SPACE).build().perform();}   <em class="jxr_comment">//send keys from keyboard with back space but this delete data just to left from cursor</em>
+<a class="jxr_linenumber" name="L22" href="#L22">22</a>  			    a.moveToElement(driver.findElement(By.xpath(Xpath.search_field))).click().sendKeys(Keys.DELETE).build().perform();   <em class="jxr_comment">//send keys from keyboard with delete but this delete data just to right from cursor</em>
+<a class="jxr_linenumber" name="L23" href="#L23">23</a>  			   String result= testg(<span class="jxr_string">"//h1[@class='H1']"</span>);
+<a class="jxr_linenumber" name="L24" href="#L24">24</a>  			   screenshoot(<span class="jxr_string">"/Users/maluy/eclipse-workspace/TubiTV/Screenshots/TestCase05_05 .png"</span>);
+<a class="jxr_linenumber" name="L25" href="#L25">25</a>                 <strong class="jxr_keyword">return</strong> result;}
+<a class="jxr_linenumber" name="L26" href="#L26">26</a>  
+<a class="jxr_linenumber" name="L27" href="#L27">27</a>  }
+</pre>
+<hr/>
+<div id="footer">Copyright &#169; 2018. All rights reserved.</div>
+</body>
+</html>

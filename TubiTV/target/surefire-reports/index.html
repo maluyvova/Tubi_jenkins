@@ -1,0 +1,1521 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 7 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Surefire_suite">
+              <span class="suite-name border-failed">Surefire suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Surefire_suite">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Surefire_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Surefire_suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Surefire_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Surefire_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Surefire_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Surefire_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">60 methods, 7 failed,   53 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase01_02_1">TestCase01_02_1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase01_20">TestCase01_20</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase02_05">TestCase02_05</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase03_03">TestCase03_03</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase05_02_2">TestCase05_02_2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase05_03">TestCase05_03</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase05_08">TestCase05_08</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods passed suite-Surefire_suite"> (hide)</a> <!-- hide-methods passed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Surefire_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase01_02">TestCase01_02</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase01_03">TestCase01_03</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase01_04">TestCase01_04</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase01_05">TestCase01_05</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase01_06">TestCase01_06</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase01_07">TestCase01_07</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase01_08">TestCase01_08</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase01_09">TestCase01_09</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase01_10">TestCase01_10</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase01_11">TestCase01_11</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase01_12">TestCase01_12</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase01_13">TestCase01_13</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase01_14">TestCase01_14</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase01_15">TestCase01_15</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase01_16">TestCase01_16</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase01_17">TestCase01_17</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase01_18">TestCase01_18</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase01_19">TestCase01_19</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase01_21">TestCase01_21</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase01_22">TestCase01_22</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase02_01">TestCase02_01</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase02_02">TestCase02_02</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase02_03">TestCase02_03</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase02_04">TestCase02_04</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase02_06">TestCase02_06</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase02_07">TestCase02_07</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase02_08">TestCase02_08</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase03_01">TestCase03_01</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase03_02">TestCase03_02</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase03_04">TestCase03_04</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase03_05">TestCase03_05</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase03_05_1">TestCase03_05_1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase03_06">TestCase03_06</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase03_07">TestCase03_07</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase05_01">TestCase05_01</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase05_02">TestCase05_02</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase05_02_1">TestCase05_02_1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase05_04">TestCase05_04</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase05_05">TestCase05_05</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase05_06">TestCase05_06</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase05_07">TestCase05_07</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase05_09">TestCase05_09</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase05_10">TestCase05_10</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase06_0">TestCase06_0</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase06_01">TestCase06_01</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase06_02">TestCase06_02</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase06_03">TestCase06_03</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase06_04">TestCase06_04</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase06_05">TestCase06_05</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase06_06">TestCase06_06</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase06_07">TestCase06_07</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase06_10">TestCase06_10</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="core.TubiTVTest" hash-for-method="TestCase06_11">TestCase06_11</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Surefire_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">core.TubiTVTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase01_02_1">
+                  </a> <!-- TestCase01_02_1 -->
+                  <span class="method-name">TestCase01_02_1</span>
+                  <div class="stack-trace">java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
+	at java.util.ArrayList.get(ArrayList.java:429)
+	at core.Testcase1_02_1.TestCase1_02_1(Testcase1_02_1.java:55)
+	at core.TubiTVTest.TestCase01_02_1(TubiTVTest.java:41)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase01_20">
+                  </a> <!-- TestCase01_20 -->
+                  <span class="method-name">TestCase01_20</span>
+                  <div class="stack-trace">java.lang.AssertionError: 
+Expected: &quot;You must be 13 years or older&quot;
+     but: was &quot;Email has already been used. Please Login or Reset your password&quot;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:18)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+	at core.TubiTVTest.TestCase01_20(TubiTVTest.java:108)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase02_05">
+                  </a> <!-- TestCase02_05 -->
+                  <span class="method-name">TestCase02_05</span>
+                  <div class="stack-trace">java.lang.AssertionError: 
+Expected: &quot;https://tubitv.com/home&quot;
+     but: was &quot;https://tubitv.com/login?redirect=/signup&quot;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:18)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+	at core.TubiTVTest.TestCase02_05(TubiTVTest.java:151)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase03_03">
+                  </a> <!-- TestCase03_03 -->
+                  <span class="method-name">TestCase03_03</span>
+                  <div class="stack-trace">java.lang.AssertionError: 
+Expected: &quot;https://tubitv.com/activate&quot;
+     but: was &quot;https://tubitv.com/signup?redirect=/activate&quot;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:18)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+	at core.TubiTVTest.TestCase03_03(TubiTVTest.java:191)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase05_02_2">
+                  </a> <!-- TestCase05_02_2 -->
+                  <span class="method-name">TestCase05_02_2</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //h1[@class=&apos;_2I1Kknp0lk&apos;] (tried for 15 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at core.Main.testg(Main.java:63)
+	at core.Testcase05_02_2.TestCase05_02_2(Testcase05_02_2.java:25)
+	at core.TubiTVTest.TestCase05_02_2(TubiTVTest.java:242)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //h1[@class=&apos;_2I1Kknp0lk&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;MacBook-Pro-3.local&apos;, ip: &apos;fe80:0:0:0:401:608a:2476:a1d6%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.1&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:882)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:881)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 32 more
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase05_03">
+                  </a> <!-- TestCase05_03 -->
+                  <span class="method-name">TestCase05_03</span>
+                  <div class="stack-trace">java.lang.AssertionError: 
+Expected: &quot;Test 7&quot;
+     but: was &quot;Born to Fly&quot;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:18)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+	at core.TubiTVTest.TestCase05_03(TubiTVTest.java:247)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase05_08">
+                  </a> <!-- TestCase05_08 -->
+                  <span class="method-name">TestCase05_08</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: 
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;MacBook-Pro-3.local&apos;, ip: &apos;fe80:0:0:0:401:608a:2476:a1d6%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.1&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=/var/folders/59/rv1j4l2s6lxfp0vlypzcr5c80000gp/T/rust_mozprofile.sTeCvj7SkLaR, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=MAC, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0.4, platformVersion=17.2.0, moz:processID=36239, browserName=firefox, javascriptEnabled=true, platformName=MAC, moz:webdriverClick=false}]
+Session ID: 5e3f4c3e-8710-e047-88b3-05a16778fce9
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at core.Main.testc(Main.java:49)
+	at core.Testcase05_08.TestCase05_08(Testcase05_08.java:23)
+	at core.TubiTVTest.TestCase05_08(TubiTVTest.java:274)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">core.TubiTVTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase01_02">
+                  </a> <!-- TestCase01_02 -->
+                  <span class="method-name">TestCase01_02</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase01_03">
+                  </a> <!-- TestCase01_03 -->
+                  <span class="method-name">TestCase01_03</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase01_04">
+                  </a> <!-- TestCase01_04 -->
+                  <span class="method-name">TestCase01_04</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase01_05">
+                  </a> <!-- TestCase01_05 -->
+                  <span class="method-name">TestCase01_05</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase01_06">
+                  </a> <!-- TestCase01_06 -->
+                  <span class="method-name">TestCase01_06</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase01_07">
+                  </a> <!-- TestCase01_07 -->
+                  <span class="method-name">TestCase01_07</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase01_08">
+                  </a> <!-- TestCase01_08 -->
+                  <span class="method-name">TestCase01_08</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase01_09">
+                  </a> <!-- TestCase01_09 -->
+                  <span class="method-name">TestCase01_09</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase01_10">
+                  </a> <!-- TestCase01_10 -->
+                  <span class="method-name">TestCase01_10</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase01_11">
+                  </a> <!-- TestCase01_11 -->
+                  <span class="method-name">TestCase01_11</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase01_12">
+                  </a> <!-- TestCase01_12 -->
+                  <span class="method-name">TestCase01_12</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase01_13">
+                  </a> <!-- TestCase01_13 -->
+                  <span class="method-name">TestCase01_13</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase01_14">
+                  </a> <!-- TestCase01_14 -->
+                  <span class="method-name">TestCase01_14</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase01_15">
+                  </a> <!-- TestCase01_15 -->
+                  <span class="method-name">TestCase01_15</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase01_16">
+                  </a> <!-- TestCase01_16 -->
+                  <span class="method-name">TestCase01_16</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase01_17">
+                  </a> <!-- TestCase01_17 -->
+                  <span class="method-name">TestCase01_17</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase01_18">
+                  </a> <!-- TestCase01_18 -->
+                  <span class="method-name">TestCase01_18</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase01_19">
+                  </a> <!-- TestCase01_19 -->
+                  <span class="method-name">TestCase01_19</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase01_21">
+                  </a> <!-- TestCase01_21 -->
+                  <span class="method-name">TestCase01_21</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase01_22">
+                  </a> <!-- TestCase01_22 -->
+                  <span class="method-name">TestCase01_22</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase02_01">
+                  </a> <!-- TestCase02_01 -->
+                  <span class="method-name">TestCase02_01</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase02_02">
+                  </a> <!-- TestCase02_02 -->
+                  <span class="method-name">TestCase02_02</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase02_03">
+                  </a> <!-- TestCase02_03 -->
+                  <span class="method-name">TestCase02_03</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase02_04">
+                  </a> <!-- TestCase02_04 -->
+                  <span class="method-name">TestCase02_04</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase02_06">
+                  </a> <!-- TestCase02_06 -->
+                  <span class="method-name">TestCase02_06</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase02_07">
+                  </a> <!-- TestCase02_07 -->
+                  <span class="method-name">TestCase02_07</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase02_08">
+                  </a> <!-- TestCase02_08 -->
+                  <span class="method-name">TestCase02_08</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase03_01">
+                  </a> <!-- TestCase03_01 -->
+                  <span class="method-name">TestCase03_01</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase03_02">
+                  </a> <!-- TestCase03_02 -->
+                  <span class="method-name">TestCase03_02</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase03_04">
+                  </a> <!-- TestCase03_04 -->
+                  <span class="method-name">TestCase03_04</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase03_05">
+                  </a> <!-- TestCase03_05 -->
+                  <span class="method-name">TestCase03_05</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase03_05_1">
+                  </a> <!-- TestCase03_05_1 -->
+                  <span class="method-name">TestCase03_05_1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase03_06">
+                  </a> <!-- TestCase03_06 -->
+                  <span class="method-name">TestCase03_06</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase03_07">
+                  </a> <!-- TestCase03_07 -->
+                  <span class="method-name">TestCase03_07</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase05_01">
+                  </a> <!-- TestCase05_01 -->
+                  <span class="method-name">TestCase05_01</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase05_02">
+                  </a> <!-- TestCase05_02 -->
+                  <span class="method-name">TestCase05_02</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase05_02_1">
+                  </a> <!-- TestCase05_02_1 -->
+                  <span class="method-name">TestCase05_02_1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase05_04">
+                  </a> <!-- TestCase05_04 -->
+                  <span class="method-name">TestCase05_04</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase05_05">
+                  </a> <!-- TestCase05_05 -->
+                  <span class="method-name">TestCase05_05</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase05_06">
+                  </a> <!-- TestCase05_06 -->
+                  <span class="method-name">TestCase05_06</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase05_07">
+                  </a> <!-- TestCase05_07 -->
+                  <span class="method-name">TestCase05_07</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase05_09">
+                  </a> <!-- TestCase05_09 -->
+                  <span class="method-name">TestCase05_09</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase05_10">
+                  </a> <!-- TestCase05_10 -->
+                  <span class="method-name">TestCase05_10</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase06_0">
+                  </a> <!-- TestCase06_0 -->
+                  <span class="method-name">TestCase06_0</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase06_01">
+                  </a> <!-- TestCase06_01 -->
+                  <span class="method-name">TestCase06_01</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase06_02">
+                  </a> <!-- TestCase06_02 -->
+                  <span class="method-name">TestCase06_02</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase06_03">
+                  </a> <!-- TestCase06_03 -->
+                  <span class="method-name">TestCase06_03</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase06_04">
+                  </a> <!-- TestCase06_04 -->
+                  <span class="method-name">TestCase06_04</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase06_05">
+                  </a> <!-- TestCase06_05 -->
+                  <span class="method-name">TestCase06_05</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase06_06">
+                  </a> <!-- TestCase06_06 -->
+                  <span class="method-name">TestCase06_06</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase06_07">
+                  </a> <!-- TestCase06_07 -->
+                  <span class="method-name">TestCase06_07</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase06_10">
+                  </a> <!-- TestCase06_10 -->
+                  <span class="method-name">TestCase06_10</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase06_11">
+                  </a> <!-- TestCase06_11 -->
+                  <span class="method-name">TestCase06_11</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+        </div> <!-- panel Surefire_suite -->
+        <div panel-name="test-xml-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;Surefire suite&quot;&gt;
+  &lt;test name=&quot;Surefire test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;core.TubiTVTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Surefire test --&gt;
+&lt;/suite&gt; &lt;!-- Surefire suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Surefire test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Surefire_suite');
+function tableData_Surefire_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(60);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'TestCase06_02')
+data.setCell(0, 2, 'core.TubiTVTest')
+data.setCell(0, 3, 36138);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'TestCase06_06')
+data.setCell(1, 2, 'core.TubiTVTest')
+data.setCell(1, 3, 32354);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'TestCase06_11')
+data.setCell(2, 2, 'core.TubiTVTest')
+data.setCell(2, 3, 30688);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'TestCase06_05')
+data.setCell(3, 2, 'core.TubiTVTest')
+data.setCell(3, 3, 30081);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'TestCase06_10')
+data.setCell(4, 2, 'core.TubiTVTest')
+data.setCell(4, 3, 30065);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'TestCase06_07')
+data.setCell(5, 2, 'core.TubiTVTest')
+data.setCell(5, 3, 29512);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'TestCase05_02_2')
+data.setCell(6, 2, 'core.TubiTVTest')
+data.setCell(6, 3, 27345);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'TestCase01_17')
+data.setCell(7, 2, 'core.TubiTVTest')
+data.setCell(7, 3, 26580);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'TestCase06_0')
+data.setCell(8, 2, 'core.TubiTVTest')
+data.setCell(8, 3, 25407);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'TestCase01_02_1')
+data.setCell(9, 2, 'core.TubiTVTest')
+data.setCell(9, 3, 25007);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'TestCase01_22')
+data.setCell(10, 2, 'core.TubiTVTest')
+data.setCell(10, 3, 24349);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'TestCase02_07')
+data.setCell(11, 2, 'core.TubiTVTest')
+data.setCell(11, 3, 24293);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'TestCase02_08')
+data.setCell(12, 2, 'core.TubiTVTest')
+data.setCell(12, 3, 24194);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'TestCase06_03')
+data.setCell(13, 2, 'core.TubiTVTest')
+data.setCell(13, 3, 23891);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'TestCase05_09')
+data.setCell(14, 2, 'core.TubiTVTest')
+data.setCell(14, 3, 23647);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'TestCase05_10')
+data.setCell(15, 2, 'core.TubiTVTest')
+data.setCell(15, 3, 23368);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'TestCase06_01')
+data.setCell(16, 2, 'core.TubiTVTest')
+data.setCell(16, 3, 22876);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'TestCase01_21')
+data.setCell(17, 2, 'core.TubiTVTest')
+data.setCell(17, 3, 22078);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'TestCase03_02')
+data.setCell(18, 2, 'core.TubiTVTest')
+data.setCell(18, 3, 20167);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'TestCase01_02')
+data.setCell(19, 2, 'core.TubiTVTest')
+data.setCell(19, 3, 19703);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'TestCase06_04')
+data.setCell(20, 2, 'core.TubiTVTest')
+data.setCell(20, 3, 19583);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'TestCase01_06')
+data.setCell(21, 2, 'core.TubiTVTest')
+data.setCell(21, 3, 19487);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'TestCase01_05')
+data.setCell(22, 2, 'core.TubiTVTest')
+data.setCell(22, 3, 19118);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'TestCase01_12')
+data.setCell(23, 2, 'core.TubiTVTest')
+data.setCell(23, 3, 16989);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'TestCase05_06')
+data.setCell(24, 2, 'core.TubiTVTest')
+data.setCell(24, 3, 16348);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'TestCase03_05')
+data.setCell(25, 2, 'core.TubiTVTest')
+data.setCell(25, 3, 16168);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'TestCase03_05_1')
+data.setCell(26, 2, 'core.TubiTVTest')
+data.setCell(26, 3, 15659);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'TestCase01_10')
+data.setCell(27, 2, 'core.TubiTVTest')
+data.setCell(27, 3, 15346);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'TestCase02_06')
+data.setCell(28, 2, 'core.TubiTVTest')
+data.setCell(28, 3, 15200);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'TestCase05_07')
+data.setCell(29, 2, 'core.TubiTVTest')
+data.setCell(29, 3, 14981);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'TestCase01_07')
+data.setCell(30, 2, 'core.TubiTVTest')
+data.setCell(30, 3, 14935);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'TestCase01_13')
+data.setCell(31, 2, 'core.TubiTVTest')
+data.setCell(31, 3, 14906);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'TestCase01_09')
+data.setCell(32, 2, 'core.TubiTVTest')
+data.setCell(32, 3, 14871);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'TestCase01_15')
+data.setCell(33, 2, 'core.TubiTVTest')
+data.setCell(33, 3, 14765);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'TestCase01_18')
+data.setCell(34, 2, 'core.TubiTVTest')
+data.setCell(34, 3, 14728);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'TestCase01_14')
+data.setCell(35, 2, 'core.TubiTVTest')
+data.setCell(35, 3, 14690);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'TestCase01_19')
+data.setCell(36, 2, 'core.TubiTVTest')
+data.setCell(36, 3, 14505);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'TestCase01_11')
+data.setCell(37, 2, 'core.TubiTVTest')
+data.setCell(37, 3, 14367);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'TestCase05_08')
+data.setCell(38, 2, 'core.TubiTVTest')
+data.setCell(38, 3, 14278);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'TestCase01_16')
+data.setCell(39, 2, 'core.TubiTVTest')
+data.setCell(39, 3, 14210);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'TestCase01_08')
+data.setCell(40, 2, 'core.TubiTVTest')
+data.setCell(40, 3, 14163);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'TestCase03_03')
+data.setCell(41, 2, 'core.TubiTVTest')
+data.setCell(41, 3, 14053);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'TestCase02_05')
+data.setCell(42, 2, 'core.TubiTVTest')
+data.setCell(42, 3, 13957);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'TestCase01_20')
+data.setCell(43, 2, 'core.TubiTVTest')
+data.setCell(43, 3, 13611);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'TestCase03_04')
+data.setCell(44, 2, 'core.TubiTVTest')
+data.setCell(44, 3, 13445);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'TestCase02_01')
+data.setCell(45, 2, 'core.TubiTVTest')
+data.setCell(45, 3, 13408);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'TestCase03_06')
+data.setCell(46, 2, 'core.TubiTVTest')
+data.setCell(46, 3, 13341);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'TestCase03_07')
+data.setCell(47, 2, 'core.TubiTVTest')
+data.setCell(47, 3, 13137);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'TestCase05_02_1')
+data.setCell(48, 2, 'core.TubiTVTest')
+data.setCell(48, 3, 12860);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'TestCase05_02')
+data.setCell(49, 2, 'core.TubiTVTest')
+data.setCell(49, 3, 12754);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'TestCase03_01')
+data.setCell(50, 2, 'core.TubiTVTest')
+data.setCell(50, 3, 12644);
+data.setCell(51, 0, 51)
+data.setCell(51, 1, 'TestCase05_03')
+data.setCell(51, 2, 'core.TubiTVTest')
+data.setCell(51, 3, 12445);
+data.setCell(52, 0, 52)
+data.setCell(52, 1, 'TestCase01_03')
+data.setCell(52, 2, 'core.TubiTVTest')
+data.setCell(52, 3, 11958);
+data.setCell(53, 0, 53)
+data.setCell(53, 1, 'TestCase05_01')
+data.setCell(53, 2, 'core.TubiTVTest')
+data.setCell(53, 3, 11822);
+data.setCell(54, 0, 54)
+data.setCell(54, 1, 'TestCase05_04')
+data.setCell(54, 2, 'core.TubiTVTest')
+data.setCell(54, 3, 11732);
+data.setCell(55, 0, 55)
+data.setCell(55, 1, 'TestCase05_05')
+data.setCell(55, 2, 'core.TubiTVTest')
+data.setCell(55, 3, 11154);
+data.setCell(56, 0, 56)
+data.setCell(56, 1, 'TestCase01_04')
+data.setCell(56, 2, 'core.TubiTVTest')
+data.setCell(56, 3, 10682);
+data.setCell(57, 0, 57)
+data.setCell(57, 1, 'TestCase02_02')
+data.setCell(57, 2, 'core.TubiTVTest')
+data.setCell(57, 3, 9527);
+data.setCell(58, 0, 58)
+data.setCell(58, 1, 'TestCase02_04')
+data.setCell(58, 2, 'core.TubiTVTest')
+data.setCell(58, 3, 9440);
+data.setCell(59, 0, 59)
+data.setCell(59, 1, 'TestCase02_03')
+data.setCell(59, 2, 'core.TubiTVTest')
+data.setCell(59, 3, 9401);
+window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 18 minutes</span>
+              <div id="times-div-Surefire_suite">
+              </div> <!-- times-div-Surefire_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">core.TubiTVTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">TestCase01_02</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TestCase01_02_1</span>
+                <span class="method-start">19714 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestCase01_03</span>
+                <span class="method-start">44750 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestCase01_04</span>
+                <span class="method-start">56710 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestCase01_05</span>
+                <span class="method-start">67394 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestCase01_06</span>
+                <span class="method-start">86514 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestCase01_07</span>
+                <span class="method-start">106003 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestCase01_08</span>
+                <span class="method-start">120940 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestCase01_09</span>
+                <span class="method-start">135105 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestCase01_10</span>
+                <span class="method-start">149977 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestCase01_11</span>
+                <span class="method-start">165324 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestCase01_12</span>
+                <span class="method-start">179692 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestCase01_13</span>
+                <span class="method-start">196684 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestCase01_14</span>
+                <span class="method-start">211590 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestCase01_15</span>
+                <span class="method-start">226281 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestCase01_16</span>
+                <span class="method-start">241047 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestCase01_17</span>
+                <span class="method-start">255258 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestCase01_18</span>
+                <span class="method-start">281839 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestCase01_19</span>
+                <span class="method-start">296568 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TestCase01_20</span>
+                <span class="method-start">311073 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestCase01_21</span>
+                <span class="method-start">324685 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestCase01_22</span>
+                <span class="method-start">346765 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestCase02_01</span>
+                <span class="method-start">371116 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestCase02_02</span>
+                <span class="method-start">384525 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestCase02_03</span>
+                <span class="method-start">394053 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestCase02_04</span>
+                <span class="method-start">403454 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TestCase02_05</span>
+                <span class="method-start">412895 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestCase02_06</span>
+                <span class="method-start">426853 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestCase02_07</span>
+                <span class="method-start">442054 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestCase02_08</span>
+                <span class="method-start">466348 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestCase03_01</span>
+                <span class="method-start">490543 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestCase03_02</span>
+                <span class="method-start">503187 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TestCase03_03</span>
+                <span class="method-start">523355 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestCase03_04</span>
+                <span class="method-start">537409 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestCase03_05</span>
+                <span class="method-start">550854 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestCase03_05_1</span>
+                <span class="method-start">567024 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestCase03_06</span>
+                <span class="method-start">582684 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestCase03_07</span>
+                <span class="method-start">596025 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestCase05_01</span>
+                <span class="method-start">609163 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestCase05_02</span>
+                <span class="method-start">620987 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestCase05_02_1</span>
+                <span class="method-start">633742 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TestCase05_02_2</span>
+                <span class="method-start">646604 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TestCase05_03</span>
+                <span class="method-start">673952 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestCase05_04</span>
+                <span class="method-start">686398 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestCase05_05</span>
+                <span class="method-start">698133 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestCase05_06</span>
+                <span class="method-start">709288 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestCase05_07</span>
+                <span class="method-start">725639 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TestCase05_08</span>
+                <span class="method-start">740621 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestCase05_09</span>
+                <span class="method-start">754901 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestCase05_10</span>
+                <span class="method-start">778549 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestCase06_0</span>
+                <span class="method-start">801918 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestCase06_01</span>
+                <span class="method-start">827326 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestCase06_02</span>
+                <span class="method-start">850203 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestCase06_03</span>
+                <span class="method-start">886343 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestCase06_04</span>
+                <span class="method-start">910236 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestCase06_05</span>
+                <span class="method-start">929821 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestCase06_06</span>
+                <span class="method-start">959905 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestCase06_07</span>
+                <span class="method-start">992260 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestCase06_10</span>
+                <span class="method-start">1021775 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestCase06_11</span>
+                <span class="method-start">1051840 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

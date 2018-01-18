@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="core.TubiTVTest" time="1,085.895" tests="60" errors="0" skipped="0" failures="7">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.121-b13"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/maluy/eclipse-workspace/TubiTV"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="test" value="TubiTVTest"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/maluy/eclipse-workspace/TubiTV"/>
+    <property name="java.runtime.version" value="1.8.0_121-b13"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/59/rv1j4l2s6lxfp0vlypzcr5c80000gp/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/usr/local/maven/apache-maven-3.3.9/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/maluy/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.13.1"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/maluy"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="maluy"/>
+    <property name="java.class.path" value="/usr/local/maven/apache-maven-3.3.9/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean site -Dtest=TubiTVTest"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_121"/>
+    <property name="java.ext.dirs" value="/Users/maluy/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/local/maven/apache-maven-3.3.9"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="TestCase01_02" classname="core.TubiTVTest" time="19.699"/>
+  <testcase name="TestCase01_02_1" classname="core.TubiTVTest" time="25.029">
+    <failure message="Index: 1, Size: 1" type="java.lang.IndexOutOfBoundsException">java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at core.TubiTVTest.TestCase01_02_1(TubiTVTest.java:41)
+</failure>
+    <system-out><![CDATA[38865b2b@mozej.com
+terms of service
+Privacy Policy
+Verify Your Email
+
+
+]]></system-out>
+  </testcase>
+  <testcase name="TestCase01_03" classname="core.TubiTVTest" time="11.958"/>
+  <testcase name="TestCase01_04" classname="core.TubiTVTest" time="10.682"/>
+  <testcase name="TestCase01_05" classname="core.TubiTVTest" time="19.119"/>
+  <testcase name="TestCase01_06" classname="core.TubiTVTest" time="19.487"/>
+  <testcase name="TestCase01_07" classname="core.TubiTVTest" time="14.935"/>
+  <testcase name="TestCase01_08" classname="core.TubiTVTest" time="14.164"/>
+  <testcase name="TestCase01_09" classname="core.TubiTVTest" time="14.872"/>
+  <testcase name="TestCase01_10" classname="core.TubiTVTest" time="15.345"/>
+  <testcase name="TestCase01_11" classname="core.TubiTVTest" time="14.366"/>
+  <testcase name="TestCase01_12" classname="core.TubiTVTest" time="16.992"/>
+  <testcase name="TestCase01_13" classname="core.TubiTVTest" time="14.905"/>
+  <testcase name="TestCase01_14" classname="core.TubiTVTest" time="14.69"/>
+  <testcase name="TestCase01_15" classname="core.TubiTVTest" time="14.764"/>
+  <testcase name="TestCase01_16" classname="core.TubiTVTest" time="14.211"/>
+  <testcase name="TestCase01_17" classname="core.TubiTVTest" time="26.579"/>
+  <testcase name="TestCase01_18" classname="core.TubiTVTest" time="14.729"/>
+  <testcase name="TestCase01_19" classname="core.TubiTVTest" time="14.505"/>
+  <testcase name="TestCase01_20" classname="core.TubiTVTest" time="13.611">
+    <failure message="&#10;Expected: &quot;You must be 13 years or older&quot;&#10;     but: was &quot;Email has already been used. Please Login or Reset your password&quot;" type="java.lang.AssertionError">java.lang.AssertionError: 
+
+Expected: "You must be 13 years or older"
+     but: was "Email has already been used. Please Login or Reset your password"
+	at core.TubiTVTest.TestCase01_20(TubiTVTest.java:108)
+</failure>
+  </testcase>
+  <testcase name="TestCase01_21" classname="core.TubiTVTest" time="22.079"/>
+  <testcase name="TestCase01_22" classname="core.TubiTVTest" time="24.35"/>
+  <testcase name="TestCase02_01" classname="core.TubiTVTest" time="13.408"/>
+  <testcase name="TestCase02_02" classname="core.TubiTVTest" time="9.528"/>
+  <testcase name="TestCase02_03" classname="core.TubiTVTest" time="9.4"/>
+  <testcase name="TestCase02_04" classname="core.TubiTVTest" time="9.439"/>
+  <testcase name="TestCase02_05" classname="core.TubiTVTest" time="13.958">
+    <failure message="&#10;Expected: &quot;https://tubitv.com/home&quot;&#10;     but: was &quot;https://tubitv.com/login?redirect=/signup&quot;" type="java.lang.AssertionError">java.lang.AssertionError: 
+
+Expected: "https://tubitv.com/home"
+     but: was "https://tubitv.com/login?redirect=/signup"
+	at core.TubiTVTest.TestCase02_05(TubiTVTest.java:151)
+</failure>
+    <system-out><![CDATA[https://tubitv.com/login?redirect=/signup
+]]></system-out>
+  </testcase>
+  <testcase name="TestCase02_06" classname="core.TubiTVTest" time="15.2"/>
+  <testcase name="TestCase02_07" classname="core.TubiTVTest" time="24.293"/>
+  <testcase name="TestCase02_08" classname="core.TubiTVTest" time="24.194"/>
+  <testcase name="TestCase03_01" classname="core.TubiTVTest" time="12.644"/>
+  <testcase name="TestCase03_02" classname="core.TubiTVTest" time="20.166"/>
+  <testcase name="TestCase03_03" classname="core.TubiTVTest" time="14.053">
+    <failure message="&#10;Expected: &quot;https://tubitv.com/activate&quot;&#10;     but: was &quot;https://tubitv.com/signup?redirect=/activate&quot;" type="java.lang.AssertionError">java.lang.AssertionError: 
+
+Expected: "https://tubitv.com/activate"
+     but: was "https://tubitv.com/signup?redirect=/activate"
+	at core.TubiTVTest.TestCase03_03(TubiTVTest.java:191)
+</failure>
+    <system-out><![CDATA[https://tubitv.com/signup?redirect=/activate
+]]></system-out>
+  </testcase>
+  <testcase name="TestCase03_04" classname="core.TubiTVTest" time="13.445"/>
+  <testcase name="TestCase03_05" classname="core.TubiTVTest" time="16.168"/>
+  <testcase name="TestCase03_05_1" classname="core.TubiTVTest" time="15.66"/>
+  <testcase name="TestCase03_06" classname="core.TubiTVTest" time="13.34"/>
+  <testcase name="TestCase03_07" classname="core.TubiTVTest" time="13.136"/>
+  <testcase name="TestCase05_01" classname="core.TubiTVTest" time="11.822"/>
+  <testcase name="TestCase05_02" classname="core.TubiTVTest" time="12.754"/>
+  <testcase name="TestCase05_02_1" classname="core.TubiTVTest" time="12.861"/>
+  <testcase name="TestCase05_02_2" classname="core.TubiTVTest" time="27.348">
+    <failure message="Expected condition failed: waiting for presence of element located by: By.xpath: //h1[@class=&apos;_2I1Kknp0lk&apos;] (tried for 15 second(s) with 500 MILLISECONDS interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //h1[@class='_2I1Kknp0lk'] (tried for 15 second(s) with 500 MILLISECONDS interval)
+	at core.TubiTVTest.TestCase05_02_2(TubiTVTest.java:242)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.xpath: //h1[@class='_2I1Kknp0lk']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'MacBook-Pro-3.local', ip: 'fe80:0:0:0:401:608a:2476:a1d6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.1', java.version: '1.8.0_121'
+Driver info: driver.version: unknown
+	at core.TubiTVTest.TestCase05_02_2(TubiTVTest.java:242)
+</failure>
+  </testcase>
+  <testcase name="TestCase05_03" classname="core.TubiTVTest" time="12.445">
+    <failure message="&#10;Expected: &quot;Test 7&quot;&#10;     but: was &quot;Born to Fly&quot;" type="java.lang.AssertionError">java.lang.AssertionError: 
+
+Expected: "Test 7"
+     but: was "Born to Fly"
+	at core.TubiTVTest.TestCase05_03(TubiTVTest.java:247)
+</failure>
+  </testcase>
+  <testcase name="TestCase05_04" classname="core.TubiTVTest" time="11.732"/>
+  <testcase name="TestCase05_05" classname="core.TubiTVTest" time="11.154"/>
+  <testcase name="TestCase05_06" classname="core.TubiTVTest" time="16.349"/>
+  <testcase name="TestCase05_07" classname="core.TubiTVTest" time="14.981"/>
+  <testcase name="TestCase05_08" classname="core.TubiTVTest" time="14.292">
+    <failure message="&#10;Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;&#10;System info: host: &apos;MacBook-Pro-3.local&apos;, ip: &apos;fe80:0:0:0:401:608a:2476:a1d6%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.1&apos;, java.version: &apos;1.8.0_121&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities [{moz:profile=/var/folders/59/rv1j4l2s6lxfp0vlypzcr5c80000gp/T/rust_mozprofile.sTeCvj7SkLaR, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=MAC, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0.4, platformVersion=17.2.0, moz:processID=36239, browserName=firefox, javascriptEnabled=true, platformName=MAC, moz:webdriverClick=false}]&#10;Session ID: 5e3f4c3e-8710-e047-88b3-05a16778fce9" type="org.openqa.selenium.ElementNotInteractableException">org.openqa.selenium.ElementNotInteractableException: 
+
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'MacBook-Pro-3.local', ip: 'fe80:0:0:0:401:608a:2476:a1d6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.1', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=/var/folders/59/rv1j4l2s6lxfp0vlypzcr5c80000gp/T/rust_mozprofile.sTeCvj7SkLaR, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=MAC, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0.4, platformVersion=17.2.0, moz:processID=36239, browserName=firefox, javascriptEnabled=true, platformName=MAC, moz:webdriverClick=false}]
+Session ID: 5e3f4c3e-8710-e047-88b3-05a16778fce9
+	at core.TubiTVTest.TestCase05_08(TubiTVTest.java:274)
+</failure>
+  </testcase>
+  <testcase name="TestCase05_09" classname="core.TubiTVTest" time="23.635"/>
+  <testcase name="TestCase05_10" classname="core.TubiTVTest" time="23.354"/>
+  <testcase name="TestCase06_0" classname="core.TubiTVTest" time="25.41"/>
+  <testcase name="TestCase06_01" classname="core.TubiTVTest" time="22.875"/>
+  <testcase name="TestCase06_02" classname="core.TubiTVTest" time="36.135"/>
+  <testcase name="TestCase06_03" classname="core.TubiTVTest" time="23.89"/>
+  <testcase name="TestCase06_04" classname="core.TubiTVTest" time="19.584"/>
+  <testcase name="TestCase06_05" classname="core.TubiTVTest" time="30.081"/>
+  <testcase name="TestCase06_06" classname="core.TubiTVTest" time="32.355"/>
+  <testcase name="TestCase06_07" classname="core.TubiTVTest" time="29.513"/>
+  <testcase name="TestCase06_10" classname="core.TubiTVTest" time="30.067"/>
+  <testcase name="TestCase06_11" classname="core.TubiTVTest" time="30.672"/>
+</testsuite>

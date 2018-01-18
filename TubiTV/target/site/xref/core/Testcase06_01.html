@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head><meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>Testcase06_01 xref</title>
+<link type="text/css" rel="stylesheet" href="../stylesheet.css" />
+</head>
+<body>
+<div id="overview"><a href="../../apidocs/core/Testcase06_01.html">View Javadoc</a></div><pre>
+<a class="jxr_linenumber" name="L1" href="#L1">1</a>   <strong class="jxr_keyword">package</strong> core;
+<a class="jxr_linenumber" name="L2" href="#L2">2</a>   
+<a class="jxr_linenumber" name="L3" href="#L3">3</a>   <strong class="jxr_keyword">import</strong> java.io.IOException;
+<a class="jxr_linenumber" name="L4" href="#L4">4</a>   
+<a class="jxr_linenumber" name="L5" href="#L5">5</a>   <strong class="jxr_keyword">import</strong> org.openqa.selenium.By;
+<a class="jxr_linenumber" name="L6" href="#L6">6</a>   <strong class="jxr_keyword">import</strong> org.openqa.selenium.Keys;
+<a class="jxr_linenumber" name="L7" href="#L7">7</a>   <strong class="jxr_keyword">import</strong> org.openqa.selenium.WebElement;
+<a class="jxr_linenumber" name="L8" href="#L8">8</a>   <strong class="jxr_keyword">import</strong> org.openqa.selenium.interactions.Actions;
+<a class="jxr_linenumber" name="L9" href="#L9">9</a>   
+<a class="jxr_linenumber" name="L10" href="#L10">10</a>  <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">class</strong> <a href="../core/Testcase06_01.html">Testcase06_01</a> <strong class="jxr_keyword">extends</strong> <a href="../core/Main.html">Main</a> <strong class="jxr_keyword">implements</strong>  URL, Xpath,data,Data_<strong class="jxr_keyword">for</strong>_user{
+<a class="jxr_linenumber" name="L11" href="#L11">11</a>  	
+<a class="jxr_linenumber" name="L12" href="#L12">12</a>  	
+<a class="jxr_linenumber" name="L13" href="#L13">13</a>  	<strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> String TestCase06_01() <strong class="jxr_keyword">throws</strong> InterruptedException, IOException{
+<a class="jxr_linenumber" name="L14" href="#L14">14</a>  		  driver=br();
+<a class="jxr_linenumber" name="L15" href="#L15">15</a>  		  driver.get(URL.url);
+<a class="jxr_linenumber" name="L16" href="#L16">16</a>  		testc(Xpath.sign_in);  <em class="jxr_comment">//click on sign in</em>
+<a class="jxr_linenumber" name="L17" href="#L17">17</a>  		tests(Xpath.semail,Data_<strong class="jxr_keyword">for</strong>_user.aemail);   <em class="jxr_comment">//sign in field</em>
+<a class="jxr_linenumber" name="L18" href="#L18">18</a>  		tests(Xpath.spassword,Data_<strong class="jxr_keyword">for</strong>_user.spassword);  <em class="jxr_comment">//password field</em>
+<a class="jxr_linenumber" name="L19" href="#L19">19</a>  		testc(Xpath.orange_signIn); <em class="jxr_comment">//click on orange sign_in</em>
+<a class="jxr_linenumber" name="L20" href="#L20">20</a>  		 WebElement b=driver.findElement(By.xpath(<span class="jxr_string">"/html/body/div/div/div[2]/header/div/div[2]/div/div/div[1]/span"</span>)); <em class="jxr_comment">// pop-up in left corner</em>
+<a class="jxr_linenumber" name="L21" href="#L21">21</a>  		    Actions act=<strong class="jxr_keyword">new</strong> Actions(driver); <em class="jxr_comment">//Action class</em>
+<a class="jxr_linenumber" name="L22" href="#L22">22</a>  		    act.moveToElement(b).perform();  <em class="jxr_comment">//mouse ovver</em>
+<a class="jxr_linenumber" name="L23" href="#L23">23</a>  		    Thread.sleep(4000);
+<a class="jxr_linenumber" name="L24" href="#L24">24</a>  		    testc(<span class="jxr_string">"/html/body/div/div/div[2]/header/div/div[2]/div/div/div[2]/a[1]"</span>); <em class="jxr_comment">// settings in left corner</em>
+<a class="jxr_linenumber" name="L25" href="#L25">25</a>  	    <strong class="jxr_keyword">for</strong> (<strong class="jxr_keyword">int</strong> i=1;i&lt;5;i++) {
+<a class="jxr_linenumber" name="L26" href="#L26">26</a>  	    	act.moveToElement(driver.findElement(By.xpath(Xpath.smount))).click().sendKeys(Keys.BACK_SPACE).build().perform();<em class="jxr_comment">//delete from field month, i'm using keybord back-space 5 times</em>
+<a class="jxr_linenumber" name="L27" href="#L27">27</a>  	    	act.moveToElement(driver.findElement(By.xpath(Xpath.sday))).click().sendKeys(Keys.BACK_SPACE).build().perform();<em class="jxr_comment">//delete from field day, i'm using keybord back-space 5 times</em>
+<a class="jxr_linenumber" name="L28" href="#L28">28</a>  	    	act.moveToElement(driver.findElement(By.xpath(Xpath.syear))).click().sendKeys(Keys.BACK_SPACE).build().perform();<em class="jxr_comment">//delete from field year, i'm using keybord back-space 5 times</em>
+<a class="jxr_linenumber" name="L29" href="#L29">29</a>  	    } 
+<a class="jxr_linenumber" name="L30" href="#L30">30</a>  	     tests(Xpath.smount,<span class="jxr_string">"03"</span>); <em class="jxr_comment">//send key to month</em>
+<a class="jxr_linenumber" name="L31" href="#L31">31</a>  	     tests(Xpath.sday,<span class="jxr_string">"01"</span>); <em class="jxr_comment">//send key to month</em>
+<a class="jxr_linenumber" name="L32" href="#L32">32</a>  	     tests(Xpath.syear,<span class="jxr_string">"2015"</span>); <em class="jxr_comment">//send key to month</em>
+<a class="jxr_linenumber" name="L33" href="#L33">33</a>  	     testc(Xpath.save);  <em class="jxr_comment">//click on save</em>
+<a class="jxr_linenumber" name="L34" href="#L34">34</a>  	     String result =testg(Xpath.errmesage); <em class="jxr_comment">//get the error massage</em>
+<a class="jxr_linenumber" name="L35" href="#L35">35</a>   driver.close();
+<a class="jxr_linenumber" name="L36" href="#L36">36</a>  	<strong class="jxr_keyword">return</strong> result;}
+<a class="jxr_linenumber" name="L37" href="#L37">37</a>  	
+<a class="jxr_linenumber" name="L38" href="#L38">38</a>  
+<a class="jxr_linenumber" name="L39" href="#L39">39</a>  }
+</pre>
+<hr/>
+<div id="footer">Copyright &#169; 2018. All rights reserved.</div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+-------------------------------------------------------------------------------
+Test set: core.TubiTVTest
+-------------------------------------------------------------------------------
+Tests run: 60, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 1,085.895 s <<< FAILURE! - in core.TubiTVTest
+TestCase01_02_1(core.TubiTVTest)  Time elapsed: 25.029 s  <<< FAILURE!
+java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at core.TubiTVTest.TestCase01_02_1(TubiTVTest.java:41)
+
+TestCase01_20(core.TubiTVTest)  Time elapsed: 13.611 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: "You must be 13 years or older"
+     but: was "Email has already been used. Please Login or Reset your password"
+	at core.TubiTVTest.TestCase01_20(TubiTVTest.java:108)
+
+TestCase02_05(core.TubiTVTest)  Time elapsed: 13.958 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: "https://tubitv.com/home"
+     but: was "https://tubitv.com/login?redirect=/signup"
+	at core.TubiTVTest.TestCase02_05(TubiTVTest.java:151)
+
+TestCase03_03(core.TubiTVTest)  Time elapsed: 14.053 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: "https://tubitv.com/activate"
+     but: was "https://tubitv.com/signup?redirect=/activate"
+	at core.TubiTVTest.TestCase03_03(TubiTVTest.java:191)
+
+TestCase05_02_2(core.TubiTVTest)  Time elapsed: 27.348 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //h1[@class='_2I1Kknp0lk'] (tried for 15 second(s) with 500 MILLISECONDS interval)
+	at core.TubiTVTest.TestCase05_02_2(TubiTVTest.java:242)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.xpath: //h1[@class='_2I1Kknp0lk']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'MacBook-Pro-3.local', ip: 'fe80:0:0:0:401:608a:2476:a1d6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.1', java.version: '1.8.0_121'
+Driver info: driver.version: unknown
+	at core.TubiTVTest.TestCase05_02_2(TubiTVTest.java:242)
+
+TestCase05_03(core.TubiTVTest)  Time elapsed: 12.445 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: "Test 7"
+     but: was "Born to Fly"
+	at core.TubiTVTest.TestCase05_03(TubiTVTest.java:247)
+
+TestCase05_08(core.TubiTVTest)  Time elapsed: 14.292 s  <<< FAILURE!
+org.openqa.selenium.ElementNotInteractableException: 
+
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'MacBook-Pro-3.local', ip: 'fe80:0:0:0:401:608a:2476:a1d6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.1', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=/var/folders/59/rv1j4l2s6lxfp0vlypzcr5c80000gp/T/rust_mozprofile.sTeCvj7SkLaR, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=MAC, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0.4, platformVersion=17.2.0, moz:processID=36239, browserName=firefox, javascriptEnabled=true, platformName=MAC, moz:webdriverClick=false}]
+Session ID: 5e3f4c3e-8710-e047-88b3-05a16778fce9
+	at core.TubiTVTest.TestCase05_08(TubiTVTest.java:274)
+
